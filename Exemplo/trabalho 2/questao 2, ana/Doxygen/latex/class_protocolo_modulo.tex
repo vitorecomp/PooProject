@@ -1,0 +1,57 @@
+\hypertarget{class_protocolo_modulo}{
+\section{\-Referência à classe \-Protocolo\-Modulo}
+\label{class_protocolo_modulo}\index{\-Protocolo\-Modulo@{\-Protocolo\-Modulo}}
+}
+
+
+\-Classe abstrata que faz a ligacao entre interacao do usuario e logica de negocio.  
+
+
+
+
+{\ttfamily \#include $<$\-Protocolos.\-h$>$}
+
+\-Diagrama de heranças da classe \-Protocolo\-Modulo\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_protocolo_modulo}
+\end{center}
+\end{figure}
+\subsection*{\-Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_protocolo_modulo_a806c451fa3191899a1485fc8b1384ea1}{
+virtual void {\bfseries cadastrar} (const \hyperlink{class_modulo}{\-Modulo} \&)=0}
+\label{class_protocolo_modulo_a806c451fa3191899a1485fc8b1384ea1}
+
+\item 
+\hypertarget{class_protocolo_modulo_ad7d56410221ef77347232fa254a0ec03}{
+virtual void {\bfseries remover} (\hyperlink{class_codigo___modulo}{\-Codigo\-\_\-\-Modulo})=0}
+\label{class_protocolo_modulo_ad7d56410221ef77347232fa254a0ec03}
+
+\item 
+\hypertarget{class_protocolo_modulo_ac8dc9878f6d12787b423cd18b7f71ef9}{
+virtual \hyperlink{class_modulo}{\-Modulo} {\bfseries pesquisar} (\hyperlink{class_codigo___modulo}{\-Codigo\-\_\-\-Modulo})=0}
+\label{class_protocolo_modulo_ac8dc9878f6d12787b423cd18b7f71ef9}
+
+\item 
+\hypertarget{class_protocolo_modulo_afe596d0942c2db35a16250521a17f1c9}{
+virtual void {\bfseries atualizar} (\hyperlink{class_modulo}{\-Modulo} $\ast$)=0}
+\label{class_protocolo_modulo_afe596d0942c2db35a16250521a17f1c9}
+
+\item 
+\hypertarget{class_protocolo_modulo_aa64f43a4b1f736fde6ca1bd2dfe9ec59}{
+virtual void {\bfseries set\-Persistencia} (\hyperlink{class_protocolo_persistencia}{\-Protocolo\-Persistencia} $\ast$)=0}
+\label{class_protocolo_modulo_aa64f43a4b1f736fde6ca1bd2dfe9ec59}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Descrição detalhada}
+\-Classe abstrata que faz a ligacao entre interacao do usuario e logica de negocio. 
+
+\-Manda os servicos de cadastrar, remover, pesquisar e atualizar \hyperlink{class_modulo}{\-Modulo} e encaminha para a logica de negocio 
+
+\-A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+\-Protocolos.\-h\end{DoxyCompactItemize}

@@ -1,0 +1,84 @@
+\documentclass[a4paper]{book}
+\usepackage{makeidx}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{sectsty}
+\usepackage[titles]{tocloft}
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=8,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\familydefault}{\sfdefault}
+\hfuzz=15pt
+\setlength{\emergencystretch}{15pt}
+\hbadness=750
+\tolerance=750
+\begin{document}
+\hypersetup{pageanchor=false,citecolor=blue}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large \-Sistema de \-Projetos dos \-Alunos }\\
+\vspace*{1cm}
+{\large \-Gerado por Doxygen 1.7.5.1}\\
+\vspace*{0.5cm}
+{\small Segunda, 10 de Outubro de 2011 22:18:29}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true,citecolor=blue}
+\chapter{\-Sistema de \-Projetos de \-Alunos}
+\label{index}\hypertarget{index}{}\input{index}
+\chapter{Índice dos \-Componentes}
+\input{annotated}
+\chapter{\-Classes}
+\input{class_codigo___fase}
+\input{class_codigo___modulo}
+\input{class_codigo___projeto}
+\input{class_data___inicio}
+\input{class_data___termino}
+\input{class_fase}
+\input{class_matricula}
+\input{class_modulo}
+\input{class_nome___arquivo}
+\input{class_nota}
+\input{class_projeto}
+\input{class_tamanho}
+\input{class_tempo}
+\printindex
+\end{document}

@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Sistema de Projetos dos Alunos: Código-Fonte de Dominios.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Sistema de Projetos dos Alunos
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Gerado por Doxygen 1.7.5.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Ficheiros</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;ficheiros</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">Dominios.h</div>  </div>
+</div>
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00002"></a>00002 <span class="preprocessor">#ifndef DominiosH</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span><span class="preprocessor">#define DominiosH</span>
+<a name="l00004"></a>00004 <span class="preprocessor"></span><span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;stdlib.h&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;stdexcept&gt;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;sstream&gt;</span>
+<a name="l00008"></a>00008 <span class="keyword">using namespace </span>std;
+<a name="l00009"></a>00009 <span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00010"></a>00010 
+<a name="l00019"></a>00019 
+<a name="l00020"></a>00020 
+<a name="l00021"></a><a class="code" href="class_codigo___projeto.html">00021</a> <span class="keyword">class </span><a class="code" href="class_codigo___projeto.html" title="Classe que representa o dominio Codigo_Projeto.">Codigo_Projeto</a>{
+<a name="l00022"></a>00022     <span class="keyword">private</span>:
+<a name="l00023"></a>00023         <span class="keywordtype">void</span> validar(<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00024"></a>00024         <span class="keywordtype">string</span> valor;
+<a name="l00025"></a>00025     <span class="keyword">public</span>: 
+<a name="l00026"></a>00026         <a class="code" href="class_codigo___projeto.html" title="Classe que representa o dominio Codigo_Projeto.">Codigo_Projeto</a>(){};
+<a name="l00027"></a>00027         <a class="code" href="class_codigo___projeto.html" title="Classe que representa o dominio Codigo_Projeto.">Codigo_Projeto</a>(<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument); 
+<a name="l00028"></a>00028         <span class="keywordtype">void</span> setValor(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00029"></a>00029         <span class="keywordtype">string</span> getValor() <span class="keyword">const</span>;
+<a name="l00030"></a>00030 };
+<a name="l00031"></a>00031  
+<a name="l00036"></a><a class="code" href="class_codigo___projeto.html#a8628c9fa45bb9be7c4b25ebfbe2c255c">00036</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_codigo___projeto.html#a8628c9fa45bb9be7c4b25ebfbe2c255c" title="Seta o valor de Codigo de Projeto.">Codigo_Projeto::setValor</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; valor) <span class="keywordflow">throw</span> (invalid_argument) {
+<a name="l00037"></a>00037     validar(valor);
+<a name="l00038"></a>00038     this-&gt;valor = valor;
+<a name="l00039"></a>00039 }
+<a name="l00040"></a>00040 
+<a name="l00045"></a><a class="code" href="class_codigo___projeto.html#ae2a6a32b20fcdd82dbafeef8cbec5bb2">00045</a> <span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code" href="class_codigo___projeto.html#ae2a6a32b20fcdd82dbafeef8cbec5bb2" title="Retorna o valor de Codigo de Projeto.">Codigo_Projeto::getValor</a>()<span class="keyword">const </span>{
+<a name="l00046"></a>00046     <span class="keywordflow">return</span> valor;
+<a name="l00047"></a>00047 }
+<a name="l00048"></a>00048 
+<a name="l00050"></a>00050 
+<a name="l00051"></a><a class="code" href="class_codigo___modulo.html">00051</a> <span class="keyword">class </span><a class="code" href="class_codigo___modulo.html" title="Classe que representa o dominio Codigo_Modulo.">Codigo_Modulo</a>{
+<a name="l00052"></a>00052     <span class="keyword">private</span>:
+<a name="l00053"></a>00053         <span class="keywordtype">void</span> validar(<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00054"></a>00054         <span class="keywordtype">string</span> valor;
+<a name="l00055"></a>00055     <span class="keyword">public</span>:
+<a name="l00056"></a>00056         <a class="code" href="class_codigo___modulo.html" title="Classe que representa o dominio Codigo_Modulo.">Codigo_Modulo</a>(){};
+<a name="l00057"></a>00057         <a class="code" href="class_codigo___modulo.html" title="Classe que representa o dominio Codigo_Modulo.">Codigo_Modulo</a>(<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00058"></a>00058         <span class="keywordtype">void</span> setValor(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00059"></a>00059         <span class="keywordtype">string</span> getValor() <span class="keyword">const</span>;
+<a name="l00060"></a>00060 };
+<a name="l00061"></a>00061 
+<a name="l00066"></a><a class="code" href="class_codigo___modulo.html#a974ed9c3733dcf75c362c53653e407e7">00066</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_codigo___modulo.html#a974ed9c3733dcf75c362c53653e407e7" title="Seta o valor de Codigo de Modulo.">Codigo_Modulo::setValor</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; valor) <span class="keywordflow">throw</span> (invalid_argument){
+<a name="l00067"></a>00067     validar(valor);
+<a name="l00068"></a>00068     this-&gt;valor = valor;
+<a name="l00069"></a>00069 }
+<a name="l00070"></a>00070 
+<a name="l00075"></a><a class="code" href="class_codigo___modulo.html#a87112e0fb26a7d32fe8cb06cc7d32746">00075</a> <span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code" href="class_codigo___modulo.html#a87112e0fb26a7d32fe8cb06cc7d32746" title="Retorna o valor de Codigo de Modulo.">Codigo_Modulo::getValor</a>()<span class="keyword"> const</span>{
+<a name="l00076"></a>00076     <span class="keywordflow">return</span> valor;
+<a name="l00077"></a>00077     }
+<a name="l00078"></a>00078    
+<a name="l00080"></a>00080 
+<a name="l00081"></a><a class="code" href="class_codigo___fase.html">00081</a> <span class="keyword">class </span><a class="code" href="class_codigo___fase.html" title="Classe que representa o dominio Codigo_Fase.">Codigo_Fase</a>{
+<a name="l00082"></a>00082     <span class="keyword">private</span>:
+<a name="l00083"></a>00083         <span class="keywordtype">void</span> validar(<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument);        
+<a name="l00084"></a>00084         <span class="keywordtype">string</span> valor;
+<a name="l00085"></a>00085     <span class="keyword">public</span>:
+<a name="l00086"></a>00086         <a class="code" href="class_codigo___fase.html" title="Classe que representa o dominio Codigo_Fase.">Codigo_Fase</a>(){};
+<a name="l00087"></a>00087         <a class="code" href="class_codigo___fase.html" title="Classe que representa o dominio Codigo_Fase.">Codigo_Fase</a>(<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00088"></a>00088         <span class="keywordtype">void</span> setValor(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00089"></a>00089         <span class="keywordtype">string</span> getValor() <span class="keyword">const</span>;
+<a name="l00090"></a>00090 };
+<a name="l00091"></a>00091 
+<a name="l00096"></a><a class="code" href="class_codigo___fase.html#a30ddd9595c79d2ba10d25a857ae01704">00096</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_codigo___fase.html#a30ddd9595c79d2ba10d25a857ae01704" title="Seta o valor de Codigo de Fase.">Codigo_Fase::setValor</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; valor) <span class="keywordflow">throw</span> (invalid_argument){
+<a name="l00097"></a>00097     validar(valor);
+<a name="l00098"></a>00098     this-&gt;valor = valor;
+<a name="l00099"></a>00099 }
+<a name="l00100"></a>00100 
+<a name="l00105"></a><a class="code" href="class_codigo___fase.html#ad6211e7c092a64788fe6b007addd48d3">00105</a> <span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code" href="class_codigo___fase.html#ad6211e7c092a64788fe6b007addd48d3" title="Retorna o valor de Codigo de Fase.">Codigo_Fase::getValor</a>()<span class="keyword"> const</span>{
+<a name="l00106"></a>00106     <span class="keywordflow">return</span> valor;
+<a name="l00107"></a>00107 }
+<a name="l00108"></a>00108 
+<a name="l00110"></a>00110 
+<a name="l00111"></a><a class="code" href="class_data___inicio.html">00111</a> <span class="keyword">class </span><a class="code" href="class_data___inicio.html" title="Classe que representa o dominio Data_Inicio.">Data_Inicio</a>{
+<a name="l00112"></a>00112     <span class="keyword">private</span>:
+<a name="l00113"></a>00113         <span class="keywordtype">void</span> validar(<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00114"></a>00114         <span class="keywordtype">string</span> valor;
+<a name="l00115"></a>00115     <span class="keyword">public</span>:
+<a name="l00116"></a>00116         <a class="code" href="class_data___inicio.html" title="Classe que representa o dominio Data_Inicio.">Data_Inicio</a>(){};
+<a name="l00117"></a>00117         <a class="code" href="class_data___inicio.html" title="Classe que representa o dominio Data_Inicio.">Data_Inicio</a>(<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00118"></a>00118         <span class="keywordtype">void</span> setValor(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00119"></a>00119         <span class="keywordtype">string</span> getValor() <span class="keyword">const</span>;
+<a name="l00120"></a>00120 };
+<a name="l00121"></a>00121 
+<a name="l00126"></a><a class="code" href="class_data___inicio.html#ad859eb0240b8e0eed36e3768855ed750">00126</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_data___inicio.html#ad859eb0240b8e0eed36e3768855ed750" title="Seta o valor de Data de Inicio.">Data_Inicio::setValor</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; valor)<span class="keywordflow">throw</span> (invalid_argument){
+<a name="l00127"></a>00127     validar(valor);
+<a name="l00128"></a>00128     this-&gt;valor = valor;
+<a name="l00129"></a>00129 }
+<a name="l00130"></a>00130 
+<a name="l00135"></a><a class="code" href="class_data___inicio.html#ac2e2c96554bda3c8b2e1bacd0ce63682">00135</a> <span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code" href="class_data___inicio.html#ac2e2c96554bda3c8b2e1bacd0ce63682" title="Retorna o valor de Data de Inicio.">Data_Inicio::getValor</a>()<span class="keyword"> const</span>{
+<a name="l00136"></a>00136     <span class="keywordflow">return</span> valor;
+<a name="l00137"></a>00137 }
+<a name="l00138"></a>00138 
+<a name="l00140"></a>00140 
+<a name="l00141"></a><a class="code" href="class_data___termino.html">00141</a> <span class="keyword">class </span><a class="code" href="class_data___termino.html" title="Classe que representa o dominio Data_Termino.">Data_Termino</a>{
+<a name="l00142"></a>00142     <span class="keyword">private</span>:
+<a name="l00143"></a>00143         <span class="keywordtype">void</span> validar(<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00144"></a>00144         <span class="keywordtype">string</span> valor;
+<a name="l00145"></a>00145     <span class="keyword">public</span>:
+<a name="l00146"></a>00146         <a class="code" href="class_data___termino.html" title="Classe que representa o dominio Data_Termino.">Data_Termino</a>(){};
+<a name="l00147"></a>00147         <a class="code" href="class_data___termino.html" title="Classe que representa o dominio Data_Termino.">Data_Termino</a>(<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00148"></a>00148         <span class="keywordtype">void</span> setValor(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00149"></a>00149         <span class="keywordtype">string</span> getValor() <span class="keyword">const</span>;
+<a name="l00150"></a>00150 };
+<a name="l00151"></a>00151 
+<a name="l00156"></a><a class="code" href="class_data___termino.html#a9aaa3f75e18900d968a38901c8de4984">00156</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_data___termino.html#a9aaa3f75e18900d968a38901c8de4984" title="Seta o valor de Data de Termino.">Data_Termino::setValor</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; valor)<span class="keywordflow">throw</span> (invalid_argument) {
+<a name="l00157"></a>00157     validar(valor);
+<a name="l00158"></a>00158     this-&gt;valor = valor;
+<a name="l00159"></a>00159 }
+<a name="l00160"></a>00160 
+<a name="l00165"></a><a class="code" href="class_data___termino.html#a318688c139a0aacad5975c70c3fd2f9a">00165</a> <span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code" href="class_data___termino.html#a318688c139a0aacad5975c70c3fd2f9a" title="Retorna o valor de Data de Termino.">Data_Termino::getValor</a>()<span class="keyword"> const</span>{
+<a name="l00166"></a>00166     <span class="keywordflow">return</span> valor;
+<a name="l00167"></a>00167 }
+<a name="l00168"></a>00168 
+<a name="l00170"></a>00170 
+<a name="l00171"></a><a class="code" href="class_matricula.html">00171</a> <span class="keyword">class </span><a class="code" href="class_matricula.html" title="Classe que representa o dominio Matricula.">Matricula</a>{
+<a name="l00172"></a>00172     <span class="keyword">private</span>:
+<a name="l00173"></a>00173         <span class="keywordtype">void</span> validar(<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00174"></a>00174         <span class="keywordtype">string</span> valor;
+<a name="l00175"></a>00175     <span class="keyword">public</span>:
+<a name="l00176"></a>00176         <a class="code" href="class_matricula.html" title="Classe que representa o dominio Matricula.">Matricula</a>(){};
+<a name="l00177"></a>00177         <a class="code" href="class_matricula.html" title="Classe que representa o dominio Matricula.">Matricula</a>(<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00178"></a>00178         <span class="keywordtype">void</span> setValor(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00179"></a>00179         <span class="keywordtype">string</span> getValor() <span class="keyword">const</span>;
+<a name="l00180"></a>00180     };
+<a name="l00181"></a>00181 
+<a name="l00186"></a><a class="code" href="class_matricula.html#a0b767fcc96039728967640a19683aecd">00186</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_matricula.html#a0b767fcc96039728967640a19683aecd" title="Seta o valor de Matricula.">Matricula::setValor</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; valor) <span class="keywordflow">throw</span> (invalid_argument){
+<a name="l00187"></a>00187     validar(valor);
+<a name="l00188"></a>00188     this-&gt;valor = valor;
+<a name="l00189"></a>00189 }
+<a name="l00190"></a>00190 
+<a name="l00195"></a><a class="code" href="class_matricula.html#a5be68782efe39d296add81af1f4a8cc2">00195</a> <span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code" href="class_matricula.html#a5be68782efe39d296add81af1f4a8cc2" title="Retorna o valor de Matricula.">Matricula::getValor</a>()<span class="keyword"> const</span>{
+<a name="l00196"></a>00196     <span class="keywordflow">return</span> valor;
+<a name="l00197"></a>00197 }
+<a name="l00198"></a>00198 
+<a name="l00200"></a>00200 
+<a name="l00201"></a><a class="code" href="class_nome___arquivo.html">00201</a> <span class="keyword">class </span><a class="code" href="class_nome___arquivo.html" title="Classe que representa o dominio Nome_Arquivo.">Nome_Arquivo</a>{
+<a name="l00202"></a>00202     <span class="keywordtype">void</span> validar(<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00203"></a>00203     <span class="keyword">private</span>:
+<a name="l00204"></a>00204         <span class="keywordtype">string</span> valor;
+<a name="l00205"></a>00205     <span class="keyword">public</span>:
+<a name="l00206"></a>00206         <a class="code" href="class_nome___arquivo.html" title="Classe que representa o dominio Nome_Arquivo.">Nome_Arquivo</a>(){};
+<a name="l00207"></a>00207         <a class="code" href="class_nome___arquivo.html" title="Classe que representa o dominio Nome_Arquivo.">Nome_Arquivo</a>(<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00208"></a>00208         <span class="keywordtype">void</span> setValor(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00209"></a>00209         <span class="keywordtype">string</span> getValor() <span class="keyword">const</span>;
+<a name="l00210"></a>00210 };
+<a name="l00211"></a>00211 
+<a name="l00216"></a><a class="code" href="class_nome___arquivo.html#a93ccb1b3f4c3458075dfa949a8d86201">00216</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_nome___arquivo.html#a93ccb1b3f4c3458075dfa949a8d86201" title="Seta o valor de Nome do Arquivo.">Nome_Arquivo::setValor</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; valor) <span class="keywordflow">throw</span> (invalid_argument){
+<a name="l00217"></a>00217     validar(valor);
+<a name="l00218"></a>00218     this-&gt;valor = valor;
+<a name="l00219"></a>00219 }
+<a name="l00220"></a>00220 
+<a name="l00225"></a><a class="code" href="class_nome___arquivo.html#a265da0a7dc6a42300a7955bba9f6fcfa">00225</a> <span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code" href="class_nome___arquivo.html#a265da0a7dc6a42300a7955bba9f6fcfa" title="Retorna o valor de Nome do Arquivo.">Nome_Arquivo::getValor</a>()<span class="keyword"> const</span>{
+<a name="l00226"></a>00226     <span class="keywordflow">return</span> valor;
+<a name="l00227"></a>00227 }
+<a name="l00228"></a>00228 
+<a name="l00230"></a>00230 
+<a name="l00231"></a><a class="code" href="class_nota.html">00231</a> <span class="keyword">class </span><a class="code" href="class_nota.html" title="Classe que representa o dominio Nota.">Nota</a>{
+<a name="l00232"></a>00232     <span class="keywordtype">void</span> validar(<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00233"></a>00233     <span class="keyword">private</span>:
+<a name="l00234"></a>00234         <span class="keywordtype">string</span> valor;
+<a name="l00235"></a>00235     <span class="keyword">public</span>:
+<a name="l00236"></a>00236         <a class="code" href="class_nota.html" title="Classe que representa o dominio Nota.">Nota</a>(){};
+<a name="l00237"></a>00237         <a class="code" href="class_nota.html" title="Classe que representa o dominio Nota.">Nota</a> (<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00238"></a>00238         <span class="keywordtype">void</span> setValor(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00239"></a>00239         <span class="keywordtype">string</span> getValor() <span class="keyword">const</span>;
+<a name="l00240"></a>00240 };
+<a name="l00241"></a>00241 
+<a name="l00246"></a><a class="code" href="class_nota.html#a8086d29478c4fc20178f9386cf0d7292">00246</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_nota.html#a8086d29478c4fc20178f9386cf0d7292" title="Seta o valor de Nota.">Nota::setValor</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; valor) <span class="keywordflow">throw</span> (invalid_argument){
+<a name="l00247"></a>00247     validar(valor);
+<a name="l00248"></a>00248     this-&gt;valor = valor;
+<a name="l00249"></a>00249 }
+<a name="l00250"></a>00250 
+<a name="l00255"></a><a class="code" href="class_nota.html#a51db67975b90fcdb0e2d4618e6608d59">00255</a> <span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code" href="class_nota.html#a51db67975b90fcdb0e2d4618e6608d59" title="Retorna o valor de Nota.">Nota::getValor</a>()<span class="keyword"> const</span>{
+<a name="l00256"></a>00256     <span class="keywordflow">return</span> valor;
+<a name="l00257"></a>00257 }
+<a name="l00258"></a>00258 
+<a name="l00260"></a>00260 
+<a name="l00261"></a><a class="code" href="class_tamanho.html">00261</a> <span class="keyword">class </span><a class="code" href="class_tamanho.html" title="Classe que representa o dominio Tamanho.">Tamanho</a>{
+<a name="l00262"></a>00262     <span class="keywordtype">void</span> validar(<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00263"></a>00263     <span class="keyword">private</span>:
+<a name="l00264"></a>00264         <span class="keywordtype">string</span> valor;
+<a name="l00265"></a>00265     <span class="keyword">public</span>:
+<a name="l00266"></a>00266         <a class="code" href="class_tamanho.html" title="Classe que representa o dominio Tamanho.">Tamanho</a>(){};
+<a name="l00267"></a>00267         <a class="code" href="class_tamanho.html" title="Classe que representa o dominio Tamanho.">Tamanho</a>(<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00268"></a>00268         <span class="keywordtype">void</span> setValor(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00269"></a>00269         <span class="keywordtype">string</span> getValor() <span class="keyword">const</span>;
+<a name="l00270"></a>00270 };
+<a name="l00271"></a>00271 
+<a name="l00276"></a><a class="code" href="class_tamanho.html#a28be3ebbc37045aeac43bf35f37927a7">00276</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_tamanho.html#a28be3ebbc37045aeac43bf35f37927a7" title="Seta o valor de Tamanho.">Tamanho::setValor</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; valor) <span class="keywordflow">throw</span> (invalid_argument){
+<a name="l00277"></a>00277     validar(valor);
+<a name="l00278"></a>00278     this-&gt;valor = valor;
+<a name="l00279"></a>00279 }
+<a name="l00284"></a><a class="code" href="class_tamanho.html#af41e8a0b80bc50c751e037423a072234">00284</a> <span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code" href="class_tamanho.html#af41e8a0b80bc50c751e037423a072234" title="Retorna o valor de Tamanho.">Tamanho::getValor</a>()<span class="keyword"> const</span>{
+<a name="l00285"></a>00285     <span class="keywordflow">return</span> valor;
+<a name="l00286"></a>00286 }
+<a name="l00287"></a>00287 
+<a name="l00289"></a>00289 
+<a name="l00290"></a><a class="code" href="class_tempo.html">00290</a> <span class="keyword">class </span><a class="code" href="class_tempo.html" title="Classe que representa o dominio Tempo.">Tempo</a>{
+<a name="l00291"></a>00291     <span class="keywordtype">void</span> validar(<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00292"></a>00292     <span class="keyword">private</span>:
+<a name="l00293"></a>00293         <span class="keywordtype">string</span> valor;
+<a name="l00294"></a>00294     <span class="keyword">public</span>:
+<a name="l00295"></a>00295         <a class="code" href="class_tempo.html" title="Classe que representa o dominio Tempo.">Tempo</a>(){};
+<a name="l00296"></a>00296         <a class="code" href="class_tempo.html" title="Classe que representa o dominio Tempo.">Tempo</a>(<span class="keywordtype">string</span>) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00297"></a>00297         <span class="keywordtype">void</span> setValor(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp;) <span class="keywordflow">throw</span> (invalid_argument);
+<a name="l00298"></a>00298         <span class="keywordtype">string</span> getValor() <span class="keyword">const</span>;
+<a name="l00299"></a>00299 };
+<a name="l00300"></a>00300 
+<a name="l00305"></a><a class="code" href="class_tempo.html#aa692776272a35f0457c3610fbca8853e">00305</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_tempo.html#aa692776272a35f0457c3610fbca8853e" title="Seta o valor de Tempo.">Tempo::setValor</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; valor)<span class="keywordflow">throw</span> (invalid_argument){
+<a name="l00306"></a>00306     validar(valor);
+<a name="l00307"></a>00307     this-&gt;valor = valor;
+<a name="l00308"></a>00308 }
+<a name="l00309"></a>00309 
+<a name="l00314"></a><a class="code" href="class_tempo.html#a52d19fafeba9848f5127906e0308c0b9">00314</a> <span class="keyword">inline</span> <span class="keywordtype">string</span> <a class="code" href="class_tempo.html#a52d19fafeba9848f5127906e0308c0b9" title="Retorna o valor de Tamanho.">Tempo::getValor</a>()<span class="keyword"> const</span>{
+<a name="l00315"></a>00315     <span class="keywordflow">return</span> valor;
+<a name="l00316"></a>00316 }
+<a name="l00317"></a>00317 
+<a name="l00318"></a>00318 <span class="preprocessor">#endif</span>
+</pre></div></div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tudo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funções</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Gerado em Terça, 6 de Dezembro de 2011 01:04:14 para Sistema de Projetos dos Alunos por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.5.1
+</small></address>
+
+</body>
+</html>

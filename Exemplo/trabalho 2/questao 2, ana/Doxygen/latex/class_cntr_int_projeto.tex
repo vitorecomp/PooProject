@@ -1,0 +1,125 @@
+\hypertarget{class_cntr_int_projeto}{
+\section{\-Referência à classe \-Cntr\-Int\-Projeto}
+\label{class_cntr_int_projeto}\index{\-Cntr\-Int\-Projeto@{\-Cntr\-Int\-Projeto}}
+}
+
+
+\-Classe que representa a controladora de interacao \-Usuario/\-Projeto.  
+
+
+
+
+{\ttfamily \#include $<$\-Controladoras.\-h$>$}
+
+\-Diagrama de heranças da classe \-Cntr\-Int\-Projeto\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_cntr_int_projeto}
+\end{center}
+\end{figure}
+\subsection*{\-Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_cntr_int_projeto_ab6de5c18ab98d4bcb3cb5413a7f5cf00}{
+void {\bfseries executar} ()}
+\label{class_cntr_int_projeto_ab6de5c18ab98d4bcb3cb5413a7f5cf00}
+
+\item 
+void \hyperlink{class_cntr_int_projeto_a21952091898e3d965af084ecbec78301}{set\-Cntr} (\hyperlink{class_protocolo_projeto}{\-Protocolo\-Projeto} $\ast$)
+\begin{DoxyCompactList}\small\item\em \-Seta a controladora de interacao com o projeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atributos \-Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_cntr_int_projeto_a8da6e2ac1d9452d3965cb64b4863c0bc}{
+string {\bfseries matricula\-Entrada}}
+\label{class_cntr_int_projeto_a8da6e2ac1d9452d3965cb64b4863c0bc}
+
+\item 
+\hypertarget{class_cntr_int_projeto_acf3904d1d7d0abd881dd63981c7cd1b1}{
+string {\bfseries codigo\-Entrada}}
+\label{class_cntr_int_projeto_acf3904d1d7d0abd881dd63981c7cd1b1}
+
+\item 
+\hypertarget{class_cntr_int_projeto_a1b380a1fa81e1dec5fbd013f19475bf6}{
+string {\bfseries data\-Inicio\-Entrada}}
+\label{class_cntr_int_projeto_a1b380a1fa81e1dec5fbd013f19475bf6}
+
+\item 
+\hypertarget{class_cntr_int_projeto_a62d182b7f5852a8cb537555489b7ade0}{
+string {\bfseries data\-Termino\-Entrada}}
+\label{class_cntr_int_projeto_a62d182b7f5852a8cb537555489b7ade0}
+
+\item 
+\hypertarget{class_cntr_int_projeto_a0870680c02758b50bdf54e3934f4ea72}{
+string {\bfseries nota\-Entrada}}
+\label{class_cntr_int_projeto_a0870680c02758b50bdf54e3934f4ea72}
+
+\item 
+\hypertarget{class_cntr_int_projeto_a2858846b000b7e54776256c1be606877}{
+\hyperlink{class_matricula}{\-Matricula} {\bfseries matricula}}
+\label{class_cntr_int_projeto_a2858846b000b7e54776256c1be606877}
+
+\item 
+\hypertarget{class_cntr_int_projeto_a9c54b1af9c555e76501e3b0c3304c9a1}{
+\hyperlink{class_codigo___projeto}{\-Codigo\-\_\-\-Projeto} {\bfseries codigo\-\_\-projeto}}
+\label{class_cntr_int_projeto_a9c54b1af9c555e76501e3b0c3304c9a1}
+
+\item 
+\hypertarget{class_cntr_int_projeto_ac53a3e721c04a9c4a72201d65a19a778}{
+\hyperlink{class_data___inicio}{\-Data\-\_\-\-Inicio} {\bfseries data\-\_\-inicio}}
+\label{class_cntr_int_projeto_ac53a3e721c04a9c4a72201d65a19a778}
+
+\item 
+\hypertarget{class_cntr_int_projeto_ab30ed341c5bf93a96dc0f04ff719ddee}{
+\hyperlink{class_data___termino}{\-Data\-\_\-\-Termino} {\bfseries data\-\_\-termino}}
+\label{class_cntr_int_projeto_ab30ed341c5bf93a96dc0f04ff719ddee}
+
+\item 
+\hypertarget{class_cntr_int_projeto_a47bd294d19f70c3afda8ce99e65b959e}{
+\hyperlink{class_nota}{\-Nota} {\bfseries nota}}
+\label{class_cntr_int_projeto_a47bd294d19f70c3afda8ce99e65b959e}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Atributos \-Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_cntr_int_projeto_a242c6381f8f0d0b2b7130b0c3af0afee}{
+\hyperlink{class_protocolo_projeto}{\-Protocolo\-Projeto} $\ast$ {\bfseries protocolo\-Projeto}}
+\label{class_cntr_int_projeto_a242c6381f8f0d0b2b7130b0c3af0afee}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Descrição detalhada}
+\-Classe que representa a controladora de interacao \-Usuario/\-Projeto. 
+
+\-Recebe a opcao escolhida pelo usuario acerca dos servicos do modulo de \hyperlink{class_projeto}{\-Projeto} e encaminha servico escolhido para a logica de negocio 
+
+\subsection{\-Documentação dos métodos}
+\hypertarget{class_cntr_int_projeto_a21952091898e3d965af084ecbec78301}{
+\index{\-Cntr\-Int\-Projeto@{\-Cntr\-Int\-Projeto}!set\-Cntr@{set\-Cntr}}
+\index{set\-Cntr@{set\-Cntr}!CntrIntProjeto@{\-Cntr\-Int\-Projeto}}
+\subsubsection[{set\-Cntr}]{\setlength{\rightskip}{0pt plus 5cm}void \-Cntr\-Int\-Projeto\-::set\-Cntr (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Protocolo\-Projeto} $\ast$}]{protocolo\-Projeto}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_cntr_int_projeto_a21952091898e3d965af084ecbec78301}
+
+
+\-Seta a controladora de interacao com o projeto. 
+
+
+\begin{DoxyParams}{\-Parâmetros}
+{\em $\ast$protocolo\-Projeto} & \\
+\hline
+\end{DoxyParams}
+
+
+\-Implementa \hyperlink{class_protocolo_int_projeto}{\-Protocolo\-Int\-Projeto}.
+
+
+
+\-A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+\-Controladoras.\-h\end{DoxyCompactItemize}

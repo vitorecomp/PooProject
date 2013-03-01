@@ -1,0 +1,57 @@
+\hypertarget{class_protocolo_projeto}{
+\section{\-Referência à classe \-Protocolo\-Projeto}
+\label{class_protocolo_projeto}\index{\-Protocolo\-Projeto@{\-Protocolo\-Projeto}}
+}
+
+
+\-Classe abstrata que faz a ligacao entre interacao do usuario e logica de negocio.  
+
+
+
+
+{\ttfamily \#include $<$\-Protocolos.\-h$>$}
+
+\-Diagrama de heranças da classe \-Protocolo\-Projeto\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_protocolo_projeto}
+\end{center}
+\end{figure}
+\subsection*{\-Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_protocolo_projeto_a9f40bae886ad64945119c11e84b2f0d5}{
+virtual void {\bfseries cadastrar} (const \hyperlink{class_projeto}{\-Projeto} \&)=0}
+\label{class_protocolo_projeto_a9f40bae886ad64945119c11e84b2f0d5}
+
+\item 
+\hypertarget{class_protocolo_projeto_a083c4caec4591d509e141e97d698aa2d}{
+virtual void {\bfseries remover} (\hyperlink{class_codigo___projeto}{\-Codigo\-\_\-\-Projeto})=0}
+\label{class_protocolo_projeto_a083c4caec4591d509e141e97d698aa2d}
+
+\item 
+\hypertarget{class_protocolo_projeto_a01c7c0f083c533c197b7c4e69f56ed59}{
+virtual \hyperlink{class_projeto}{\-Projeto} {\bfseries pesquisar} (\hyperlink{class_codigo___projeto}{\-Codigo\-\_\-\-Projeto})=0}
+\label{class_protocolo_projeto_a01c7c0f083c533c197b7c4e69f56ed59}
+
+\item 
+\hypertarget{class_protocolo_projeto_a8aff82adca2349e06fe963c558a586c7}{
+virtual void {\bfseries atualizar} (\hyperlink{class_projeto}{\-Projeto} $\ast$)=0}
+\label{class_protocolo_projeto_a8aff82adca2349e06fe963c558a586c7}
+
+\item 
+\hypertarget{class_protocolo_projeto_a3fcb3551c4cf44438865079015043089}{
+virtual void {\bfseries set\-Persistencia} (\hyperlink{class_protocolo_persistencia}{\-Protocolo\-Persistencia} $\ast$)=0}
+\label{class_protocolo_projeto_a3fcb3551c4cf44438865079015043089}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Descrição detalhada}
+\-Classe abstrata que faz a ligacao entre interacao do usuario e logica de negocio. 
+
+\-Manda os servicos de cadastrar, remover, pesquisar e atualizar \hyperlink{class_projeto}{\-Projeto} e encaminha para a logica de negocio 
+
+\-A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+\-Protocolos.\-h\end{DoxyCompactItemize}

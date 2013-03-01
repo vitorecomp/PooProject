@@ -1,0 +1,107 @@
+\hypertarget{class_cntr_l_n_metrica}{
+\section{\-Referência à classe \-Cntr\-L\-N\-Metrica}
+\label{class_cntr_l_n_metrica}\index{\-Cntr\-L\-N\-Metrica@{\-Cntr\-L\-N\-Metrica}}
+}
+
+
+\-Classe que representa a controladora de logica de negocio relacionada as metricas.  
+
+
+
+
+{\ttfamily \#include $<$\-Controladoras\-L\-N.\-h$>$}
+
+\-Diagrama de heranças da classe \-Cntr\-L\-N\-Metrica\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cntr_l_n_metrica}
+\end{center}
+\end{figure}
+\subsection*{\-Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_cntr_l_n_metrica_a7552e5964b9f7f5fb088465d5a8c4cc1}{
+void {\bfseries numero\-\_\-linhas} (\hyperlink{class_metrica}{\-Metrica})}
+\label{class_cntr_l_n_metrica_a7552e5964b9f7f5fb088465d5a8c4cc1}
+
+\item 
+\hypertarget{class_cntr_l_n_metrica_a2fcf7da5433658011c532fe53d228df6}{
+void {\bfseries tempo\-\_\-gasto\-\_\-projeto} (\hyperlink{class_metrica}{\-Metrica})}
+\label{class_cntr_l_n_metrica_a2fcf7da5433658011c532fe53d228df6}
+
+\item 
+\hypertarget{class_cntr_l_n_metrica_a5e14dd065f8d038751f807e8e8d0e1e4}{
+void {\bfseries tempo\-\_\-gasto\-\_\-modulo} (\hyperlink{class_metrica}{\-Metrica})}
+\label{class_cntr_l_n_metrica_a5e14dd065f8d038751f807e8e8d0e1e4}
+
+\item 
+\hypertarget{class_cntr_l_n_metrica_a67f89becc8ea57d771e41a41fce93f98}{
+void {\bfseries produtividade\-\_\-projeto} (\hyperlink{class_metrica}{\-Metrica})}
+\label{class_cntr_l_n_metrica_a67f89becc8ea57d771e41a41fce93f98}
+
+\item 
+\hypertarget{class_cntr_l_n_metrica_a9e89725ffd87ffdfdce30a0b18b95896}{
+void {\bfseries produtividade\-\_\-modulo} (\hyperlink{class_metrica}{\-Metrica})}
+\label{class_cntr_l_n_metrica_a9e89725ffd87ffdfdce30a0b18b95896}
+
+\item 
+\hypertarget{class_cntr_l_n_metrica_a00ede5b3b0bce437a36c993411dd95a1}{
+void {\bfseries nota} (\hyperlink{class_metrica}{\-Metrica})}
+\label{class_cntr_l_n_metrica_a00ede5b3b0bce437a36c993411dd95a1}
+
+\item 
+\hypertarget{class_cntr_l_n_metrica_a0c6abff6ebfea0e395080d1aeaf34bf9}{
+void {\bfseries tamanho\-\_\-medio} (\hyperlink{class_metrica}{\-Metrica})}
+\label{class_cntr_l_n_metrica_a0c6abff6ebfea0e395080d1aeaf34bf9}
+
+\item 
+\hypertarget{class_cntr_l_n_metrica_a142591518e20ec5bf5f3376df5e41e85}{
+void {\bfseries produtividade\-\_\-media} (\hyperlink{class_metrica}{\-Metrica})}
+\label{class_cntr_l_n_metrica_a142591518e20ec5bf5f3376df5e41e85}
+
+\item 
+void \hyperlink{class_cntr_l_n_metrica_ab55f87c1571c1c5766ae085d82ca8521}{set\-Persistencia} (\hyperlink{class_protocolo_persistencia}{\-Protocolo\-Persistencia} $\ast$)
+\begin{DoxyCompactList}\small\item\em \-Seta a controladora de logica de negocio de metricas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atributos \-Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_cntr_l_n_metrica_a4d2e4c0e6acdb08c4ec218403e7bb477}{
+\hyperlink{class_protocolo_persistencia}{\-Protocolo\-Persistencia} $\ast$ {\bfseries protocolo\-Persistencia}}
+\label{class_cntr_l_n_metrica_a4d2e4c0e6acdb08c4ec218403e7bb477}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Descrição detalhada}
+\-Classe que representa a controladora de logica de negocio relacionada as metricas. 
+
+\-Recebe os dados da camada de apresentacao e prove os servicos relacionados as metricas para a camada de persistencia. \-Aqui tambem sao executados os calculos das metricas solicitadas que recebem as informacoes da camada de persistencia. 
+
+\subsection{\-Documentação dos métodos}
+\hypertarget{class_cntr_l_n_metrica_ab55f87c1571c1c5766ae085d82ca8521}{
+\index{\-Cntr\-L\-N\-Metrica@{\-Cntr\-L\-N\-Metrica}!set\-Persistencia@{set\-Persistencia}}
+\index{set\-Persistencia@{set\-Persistencia}!CntrLNMetrica@{\-Cntr\-L\-N\-Metrica}}
+\subsubsection[{set\-Persistencia}]{\setlength{\rightskip}{0pt plus 5cm}void \-Cntr\-L\-N\-Metrica\-::set\-Persistencia (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Protocolo\-Persistencia} $\ast$}]{protocolo\-Persistencia}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_cntr_l_n_metrica_ab55f87c1571c1c5766ae085d82ca8521}
+
+
+\-Seta a controladora de logica de negocio de metricas. 
+
+
+\begin{DoxyParams}{\-Parâmetros}
+{\em $\ast$protocolo\-Persistencia} & \\
+\hline
+\end{DoxyParams}
+
+
+\-Implementa \hyperlink{class_protocolo_metrica}{\-Protocolo\-Metrica}.
+
+
+
+\-A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+\-Controladoras\-L\-N.\-h\end{DoxyCompactItemize}

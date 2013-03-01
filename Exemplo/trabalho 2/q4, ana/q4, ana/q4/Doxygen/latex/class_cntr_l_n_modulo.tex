@@ -1,0 +1,87 @@
+\hypertarget{class_cntr_l_n_modulo}{
+\section{\-Referência à classe \-Cntr\-L\-N\-Modulo}
+\label{class_cntr_l_n_modulo}\index{\-Cntr\-L\-N\-Modulo@{\-Cntr\-L\-N\-Modulo}}
+}
+
+
+\-Classe que representa a controladora de logica de negocio relacionada aos modulos.  
+
+
+
+
+{\ttfamily \#include $<$\-Controladoras\-L\-N.\-h$>$}
+
+\-Diagrama de heranças da classe \-Cntr\-L\-N\-Modulo\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cntr_l_n_modulo}
+\end{center}
+\end{figure}
+\subsection*{\-Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_cntr_l_n_modulo_a4552fd67087d47ac4121077a6db07774}{
+void {\bfseries cadastrar} (const \hyperlink{class_modulo}{\-Modulo} \&)}
+\label{class_cntr_l_n_modulo_a4552fd67087d47ac4121077a6db07774}
+
+\item 
+\hypertarget{class_cntr_l_n_modulo_a189457ea86d4de9db66cdc6e72a71c68}{
+void {\bfseries remover} (\hyperlink{class_codigo___modulo}{\-Codigo\-\_\-\-Modulo})}
+\label{class_cntr_l_n_modulo_a189457ea86d4de9db66cdc6e72a71c68}
+
+\item 
+\hypertarget{class_cntr_l_n_modulo_a95cd617ebfb9ecce805a8179c69ee36c}{
+\hyperlink{class_modulo}{\-Modulo} {\bfseries pesquisar} (\hyperlink{class_codigo___modulo}{\-Codigo\-\_\-\-Modulo})}
+\label{class_cntr_l_n_modulo_a95cd617ebfb9ecce805a8179c69ee36c}
+
+\item 
+\hypertarget{class_cntr_l_n_modulo_a91ebd74da8a474ff6a9c5a06e19ae746}{
+void {\bfseries atualizar} (\hyperlink{class_modulo}{\-Modulo} $\ast$)}
+\label{class_cntr_l_n_modulo_a91ebd74da8a474ff6a9c5a06e19ae746}
+
+\item 
+void \hyperlink{class_cntr_l_n_modulo_a7c5c6328344a3318e9609c003decb411}{set\-Persistencia} (\hyperlink{class_protocolo_persistencia}{\-Protocolo\-Persistencia} $\ast$)
+\begin{DoxyCompactList}\small\item\em \-Seta a controladora de logica de negocio de modulos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atributos \-Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_cntr_l_n_modulo_ab49f410910fa6dbf829d7b18d2e0a480}{
+\hyperlink{class_protocolo_persistencia}{\-Protocolo\-Persistencia} $\ast$ {\bfseries protocolo\-Persistencia}}
+\label{class_cntr_l_n_modulo_ab49f410910fa6dbf829d7b18d2e0a480}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Descrição detalhada}
+\-Classe que representa a controladora de logica de negocio relacionada aos modulos. 
+
+\-Recebe os dados da camada de apresentacao e prove os servicos relacionados aos modulos para a camada de persistencia. \-Aqui tambem sao executados os servicos de regra de negocio. 
+
+\subsection{\-Documentação dos métodos}
+\hypertarget{class_cntr_l_n_modulo_a7c5c6328344a3318e9609c003decb411}{
+\index{\-Cntr\-L\-N\-Modulo@{\-Cntr\-L\-N\-Modulo}!set\-Persistencia@{set\-Persistencia}}
+\index{set\-Persistencia@{set\-Persistencia}!CntrLNModulo@{\-Cntr\-L\-N\-Modulo}}
+\subsubsection[{set\-Persistencia}]{\setlength{\rightskip}{0pt plus 5cm}void \-Cntr\-L\-N\-Modulo\-::set\-Persistencia (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Protocolo\-Persistencia} $\ast$}]{protocolo\-Persistencia}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_cntr_l_n_modulo_a7c5c6328344a3318e9609c003decb411}
+
+
+\-Seta a controladora de logica de negocio de modulos. 
+
+
+\begin{DoxyParams}{\-Parâmetros}
+{\em $\ast$protocolo\-Persistencia} & \\
+\hline
+\end{DoxyParams}
+
+
+\-Implementa \hyperlink{class_protocolo_modulo}{\-Protocolo\-Modulo}.
+
+
+
+\-A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+\-Controladoras\-L\-N.\-h\end{DoxyCompactItemize}

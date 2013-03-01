@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>Testes do Sistema de Projetos dos Alunos: Código-Fonte de testestipos.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Testes do Sistema de Projetos dos Alunos
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Gerado por Doxygen 1.7.5.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Busca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+    </ul>
+  </div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">testestipos.h</div>  </div>
+</div>
+<div class="contents">
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00002"></a>00002 <span class="preprocessor">#ifndef testestiposH</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span><span class="preprocessor">#define testestiposH</span>
+<a name="l00004"></a>00004 <span class="preprocessor"></span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &quot;..\header\Dominios.h&quot;</span>
+<a name="l00007"></a>00007 <span class="comment">//---------------------------------------------------------------------------</span>
+<a name="l00008"></a>00008 
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 
+<a name="l00018"></a><a class="code" href="class_teste_unidade.html">00018</a> <span class="keyword">class </span><a class="code" href="class_teste_unidade.html" title="Classe TesteUnidade.">TesteUnidade</a> {
+<a name="l00019"></a>00019     <span class="keyword">public</span>:
+<a name="l00020"></a>00020         <span class="keyword">virtual</span> <span class="keywordtype">void</span> setUp() = 0;
+<a name="l00021"></a>00021         <span class="keyword">virtual</span> <span class="keywordtype">void</span> tearDown() = 0;
+<a name="l00022"></a>00022         <span class="keyword">virtual</span> <span class="keywordtype">void</span> run() = 0;
+<a name="l00023"></a>00023 };
+<a name="l00024"></a>00024 
+<a name="l00026"></a>00026 
+<a name="l00027"></a><a class="code" href="class_teste_unidade_codigo___projeto.html">00027</a> <span class="keyword">class </span><a class="code" href="class_teste_unidade_codigo___projeto.html" title="Classe TesteUnidadeCodigo_Projeto.">TesteUnidadeCodigo_Projeto</a>: <span class="keyword">public</span> <a class="code" href="class_teste_unidade.html" title="Classe TesteUnidade.">TesteUnidade</a>, <span class="keyword">public</span> Codigo_Projeto {
+<a name="l00028"></a>00028     <span class="keyword">private</span>:
+<a name="l00029"></a>00029         Codigo_Projeto *codigo_projeto;
+<a name="l00030"></a>00030         <span class="keywordtype">void</span> testarValido();
+<a name="l00031"></a>00031         <span class="keywordtype">void</span> testarInvalido();
+<a name="l00032"></a>00032     <span class="keyword">public</span>:
+<a name="l00036"></a><a class="code" href="class_teste_unidade_codigo___projeto.html#a08873edf78ee0550b0377da24fc574fb">00036</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_codigo___projeto.html#a08873edf78ee0550b0377da24fc574fb" title="cria uma instancia da classe Codigo_Projeto">setUp</a>(){
+<a name="l00037"></a>00037             codigo_projeto = <span class="keyword">new</span> Codigo_Projeto;
+<a name="l00038"></a>00038         }
+<a name="l00042"></a><a class="code" href="class_teste_unidade_codigo___projeto.html#a1e02a73686fa764e0189a24b1b3a5f46">00042</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_codigo___projeto.html#a1e02a73686fa764e0189a24b1b3a5f46" title="deleta a instancia da classe Codigo_Projeto">tearDown</a>(){
+<a name="l00043"></a>00043             <span class="keyword">delete</span> codigo_projeto;
+<a name="l00044"></a>00044         }
+<a name="l00048"></a><a class="code" href="class_teste_unidade_codigo___projeto.html#ab54dceaedb9cc4bbd14360b97d6a47a3">00048</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_codigo___projeto.html#ab54dceaedb9cc4bbd14360b97d6a47a3" title="executa o setUp(), testarValido() , testarInvalido(), tearDown().">run</a>(){
+<a name="l00049"></a>00049             <a class="code" href="class_teste_unidade_codigo___projeto.html#a08873edf78ee0550b0377da24fc574fb" title="cria uma instancia da classe Codigo_Projeto">setUp</a>();
+<a name="l00050"></a>00050             testarValido();
+<a name="l00051"></a>00051             testarInvalido();
+<a name="l00052"></a>00052             <a class="code" href="class_teste_unidade_codigo___projeto.html#a1e02a73686fa764e0189a24b1b3a5f46" title="deleta a instancia da classe Codigo_Projeto">tearDown</a>();
+<a name="l00053"></a>00053         }
+<a name="l00054"></a>00054 };
+<a name="l00055"></a>00055 
+<a name="l00057"></a>00057 
+<a name="l00058"></a><a class="code" href="class_teste_unidade_codigo___modulo.html">00058</a> <span class="keyword">class </span><a class="code" href="class_teste_unidade_codigo___modulo.html" title="Classe TesteUnidadeCodigo_Modulo.">TesteUnidadeCodigo_Modulo</a>: <span class="keyword">public</span> <a class="code" href="class_teste_unidade.html" title="Classe TesteUnidade.">TesteUnidade</a>, <span class="keyword">public</span> Codigo_Modulo{
+<a name="l00059"></a>00059     <span class="keyword">private</span>:
+<a name="l00060"></a>00060         Codigo_Modulo *codigo_modulo;
+<a name="l00061"></a>00061         <span class="keywordtype">void</span> testarValido();
+<a name="l00062"></a>00062         <span class="keywordtype">void</span> testarInvalido();
+<a name="l00063"></a>00063     <span class="keyword">public</span>:
+<a name="l00067"></a><a class="code" href="class_teste_unidade_codigo___modulo.html#ab9a7debd6cebfe5708b4f46d3e09878f">00067</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_codigo___modulo.html#ab9a7debd6cebfe5708b4f46d3e09878f" title="cria uma instancia da classe Codigo_Modulo">setUp</a>(){
+<a name="l00068"></a>00068             codigo_modulo = <span class="keyword">new</span> Codigo_Modulo;
+<a name="l00069"></a>00069         }
+<a name="l00073"></a><a class="code" href="class_teste_unidade_codigo___modulo.html#ac5663f6baabc9d3743d227d98d854f2d">00073</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_codigo___modulo.html#ac5663f6baabc9d3743d227d98d854f2d" title="deleta a instancia da classe Codigo_Modulo">tearDown</a>(){
+<a name="l00074"></a>00074             <span class="keyword">delete</span> codigo_modulo;
+<a name="l00075"></a>00075         }
+<a name="l00079"></a><a class="code" href="class_teste_unidade_codigo___modulo.html#ab56267182e8bc291e100ac9acc0ef562">00079</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_codigo___modulo.html#ab56267182e8bc291e100ac9acc0ef562" title="executa o setUp(), testarValido() , testarInvalido(), tearDown().">run</a>(){
+<a name="l00080"></a>00080             <a class="code" href="class_teste_unidade_codigo___modulo.html#ab9a7debd6cebfe5708b4f46d3e09878f" title="cria uma instancia da classe Codigo_Modulo">setUp</a>();
+<a name="l00081"></a>00081             testarValido();
+<a name="l00082"></a>00082             testarInvalido();
+<a name="l00083"></a>00083             <a class="code" href="class_teste_unidade_codigo___modulo.html#ac5663f6baabc9d3743d227d98d854f2d" title="deleta a instancia da classe Codigo_Modulo">tearDown</a>();
+<a name="l00084"></a>00084         }
+<a name="l00085"></a>00085 };
+<a name="l00086"></a>00086 
+<a name="l00088"></a>00088 
+<a name="l00089"></a><a class="code" href="class_teste_unidade_codigo___fase.html">00089</a> <span class="keyword">class </span><a class="code" href="class_teste_unidade_codigo___fase.html" title="Classe TesteUnidadeCodigo_Fase.">TesteUnidadeCodigo_Fase</a>: <span class="keyword">public</span> <a class="code" href="class_teste_unidade.html" title="Classe TesteUnidade.">TesteUnidade</a>, <span class="keyword">public</span> Codigo_Fase{
+<a name="l00090"></a>00090     <span class="keyword">private</span>:
+<a name="l00091"></a>00091         Codigo_Fase *codigo_fase;
+<a name="l00092"></a>00092         <span class="keywordtype">void</span> testarValido();
+<a name="l00093"></a>00093         <span class="keywordtype">void</span> testarInvalido();
+<a name="l00094"></a>00094     <span class="keyword">public</span>:
+<a name="l00098"></a><a class="code" href="class_teste_unidade_codigo___fase.html#a7c3ee4cd4096b53c8640659f098e2053">00098</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_codigo___fase.html#a7c3ee4cd4096b53c8640659f098e2053" title="cria uma instancia da classe Codigo_Fase">setUp</a>(){
+<a name="l00099"></a>00099             codigo_fase = <span class="keyword">new</span> Codigo_Fase;
+<a name="l00100"></a>00100         }
+<a name="l00104"></a><a class="code" href="class_teste_unidade_codigo___fase.html#acea7843e220309aab2ef6baf014a15dd">00104</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_codigo___fase.html#acea7843e220309aab2ef6baf014a15dd" title="deleta a instancia da classe Codigo_Fase">tearDown</a>(){
+<a name="l00105"></a>00105             <span class="keyword">delete</span> codigo_fase;
+<a name="l00106"></a>00106         }
+<a name="l00110"></a><a class="code" href="class_teste_unidade_codigo___fase.html#a4d4bb33015750352e358c34312e9b55f">00110</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_codigo___fase.html#a4d4bb33015750352e358c34312e9b55f" title="executa o setUp(), testarValido() , testarInvalido(), tearDown().">run</a>(){
+<a name="l00111"></a>00111             <a class="code" href="class_teste_unidade_codigo___fase.html#a7c3ee4cd4096b53c8640659f098e2053" title="cria uma instancia da classe Codigo_Fase">setUp</a>();
+<a name="l00112"></a>00112             testarValido();
+<a name="l00113"></a>00113             testarInvalido();
+<a name="l00114"></a>00114             <a class="code" href="class_teste_unidade_codigo___fase.html#acea7843e220309aab2ef6baf014a15dd" title="deleta a instancia da classe Codigo_Fase">tearDown</a>();
+<a name="l00115"></a>00115         }
+<a name="l00116"></a>00116 };
+<a name="l00117"></a>00117        
+<a name="l00119"></a>00119 
+<a name="l00120"></a><a class="code" href="class_teste_unidade_data___inicio.html">00120</a> <span class="keyword">class </span><a class="code" href="class_teste_unidade_data___inicio.html" title="Classe TesteUnidadeData_Inicio.">TesteUnidadeData_Inicio</a>: <span class="keyword">public</span> <a class="code" href="class_teste_unidade.html" title="Classe TesteUnidade.">TesteUnidade</a>, <span class="keyword">public</span> Data_Inicio{
+<a name="l00121"></a>00121     <span class="keyword">private</span>:
+<a name="l00122"></a>00122         Data_Inicio *data_inicio;
+<a name="l00123"></a>00123         <span class="keywordtype">void</span> testarValido();
+<a name="l00124"></a>00124         <span class="keywordtype">void</span> testarInvalido();
+<a name="l00125"></a>00125     <span class="keyword">public</span>:
+<a name="l00129"></a><a class="code" href="class_teste_unidade_data___inicio.html#aaddfb2e6b483890801372ab84f05bca2">00129</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_data___inicio.html#aaddfb2e6b483890801372ab84f05bca2" title="cria uma instancia da classe Data_Inicio">setUp</a>(){
+<a name="l00130"></a>00130             data_inicio = <span class="keyword">new</span> Data_Inicio;
+<a name="l00131"></a>00131         }
+<a name="l00135"></a><a class="code" href="class_teste_unidade_data___inicio.html#a7f1e225037892bbc000bb492ac7a739f">00135</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_data___inicio.html#a7f1e225037892bbc000bb492ac7a739f" title="deleta a instancia da classe Data_Inicio">tearDown</a>(){
+<a name="l00136"></a>00136             <span class="keyword">delete</span> data_inicio;
+<a name="l00137"></a>00137         }
+<a name="l00141"></a><a class="code" href="class_teste_unidade_data___inicio.html#a9f86daa2f2c6807f91f77719b0ef7a0d">00141</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_data___inicio.html#a9f86daa2f2c6807f91f77719b0ef7a0d" title="executa o setUp(), testarValido() , testarInvalido(), tearDown().">run</a>(){
+<a name="l00142"></a>00142             <a class="code" href="class_teste_unidade_data___inicio.html#aaddfb2e6b483890801372ab84f05bca2" title="cria uma instancia da classe Data_Inicio">setUp</a>();
+<a name="l00143"></a>00143             testarValido();
+<a name="l00144"></a>00144             testarInvalido();
+<a name="l00145"></a>00145             <a class="code" href="class_teste_unidade_data___inicio.html#a7f1e225037892bbc000bb492ac7a739f" title="deleta a instancia da classe Data_Inicio">tearDown</a>();
+<a name="l00146"></a>00146         }
+<a name="l00147"></a>00147 };
+<a name="l00148"></a>00148 
+<a name="l00150"></a>00150 
+<a name="l00151"></a><a class="code" href="class_teste_unidade_data___termino.html">00151</a> <span class="keyword">class </span><a class="code" href="class_teste_unidade_data___termino.html" title="Classe TesteUnidadeData_Termino.">TesteUnidadeData_Termino</a>: <span class="keyword">public</span> <a class="code" href="class_teste_unidade.html" title="Classe TesteUnidade.">TesteUnidade</a>, <span class="keyword">public</span> Data_Termino{
+<a name="l00152"></a>00152     <span class="keyword">private</span>:
+<a name="l00153"></a>00153         Data_Termino *data_termino;
+<a name="l00154"></a>00154         <span class="keywordtype">void</span> testarValido();
+<a name="l00155"></a>00155         <span class="keywordtype">void</span> testarInvalido();
+<a name="l00156"></a>00156     <span class="keyword">public</span>:
+<a name="l00160"></a><a class="code" href="class_teste_unidade_data___termino.html#a0c6693f95f1b90b068e2cab6c9889662">00160</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_data___termino.html#a0c6693f95f1b90b068e2cab6c9889662" title="cria uma instancia da classe Data_Termino">setUp</a>(){
+<a name="l00161"></a>00161             data_termino = <span class="keyword">new</span> Data_Termino;
+<a name="l00162"></a>00162         }
+<a name="l00166"></a><a class="code" href="class_teste_unidade_data___termino.html#a02bc5c95c16c1de7dcfd63f9d59e36d3">00166</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_data___termino.html#a02bc5c95c16c1de7dcfd63f9d59e36d3" title="deleta a instancia da classe Data_Termino">tearDown</a>(){
+<a name="l00167"></a>00167             <span class="keyword">delete</span> data_termino;
+<a name="l00168"></a>00168         }
+<a name="l00172"></a><a class="code" href="class_teste_unidade_data___termino.html#a9c59cd926ba305c855ed5e476445e6f4">00172</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_data___termino.html#a9c59cd926ba305c855ed5e476445e6f4" title="executa o setUp(), testarValido() , testarInvalido(), tearDown().">run</a>(){
+<a name="l00173"></a>00173             <a class="code" href="class_teste_unidade_data___termino.html#a0c6693f95f1b90b068e2cab6c9889662" title="cria uma instancia da classe Data_Termino">setUp</a>();
+<a name="l00174"></a>00174             testarValido();
+<a name="l00175"></a>00175             testarInvalido();
+<a name="l00176"></a>00176             <a class="code" href="class_teste_unidade_data___termino.html#a02bc5c95c16c1de7dcfd63f9d59e36d3" title="deleta a instancia da classe Data_Termino">tearDown</a>();
+<a name="l00177"></a>00177         }
+<a name="l00178"></a>00178 };
+<a name="l00179"></a>00179       
+<a name="l00181"></a>00181 
+<a name="l00182"></a><a class="code" href="class_teste_unidade_matricula.html">00182</a> <span class="keyword">class </span><a class="code" href="class_teste_unidade_matricula.html" title="Classe TesteUnidadeMatricula.">TesteUnidadeMatricula</a>: <span class="keyword">public</span> <a class="code" href="class_teste_unidade.html" title="Classe TesteUnidade.">TesteUnidade</a>, <span class="keyword">public</span> Matricula {
+<a name="l00183"></a>00183     <span class="keyword">private</span>:
+<a name="l00184"></a>00184         Matricula *matricula;
+<a name="l00185"></a>00185         <span class="keywordtype">void</span> testarValido();
+<a name="l00186"></a>00186         <span class="keywordtype">void</span> testarInvalido();
+<a name="l00187"></a>00187     
+<a name="l00188"></a>00188     <span class="keyword">public</span>:
+<a name="l00192"></a><a class="code" href="class_teste_unidade_matricula.html#aa5289b85d9097a5cd776889066a2a21e">00192</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_matricula.html#aa5289b85d9097a5cd776889066a2a21e" title="cria uma instancia da classe Matricula">setUp</a>(){
+<a name="l00193"></a>00193             matricula = <span class="keyword">new</span> Matricula;
+<a name="l00194"></a>00194         }
+<a name="l00198"></a><a class="code" href="class_teste_unidade_matricula.html#acd40e1914bdfb2eaddc1e24dcda6a92d">00198</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_matricula.html#acd40e1914bdfb2eaddc1e24dcda6a92d" title="deleta a instancia da classe Matricula">tearDown</a>(){
+<a name="l00199"></a>00199             <span class="keyword">delete</span> matricula;
+<a name="l00200"></a>00200         }
+<a name="l00204"></a><a class="code" href="class_teste_unidade_matricula.html#af9494e1ba911d9f8a84df252057f4fd7">00204</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_matricula.html#af9494e1ba911d9f8a84df252057f4fd7" title="executa o setUp(), testarValido() , testarInvalido(), tearDown().">run</a>() {
+<a name="l00205"></a>00205             <a class="code" href="class_teste_unidade_matricula.html#aa5289b85d9097a5cd776889066a2a21e" title="cria uma instancia da classe Matricula">setUp</a>();
+<a name="l00206"></a>00206             testarValido();
+<a name="l00207"></a>00207             testarInvalido();
+<a name="l00208"></a>00208             <a class="code" href="class_teste_unidade_matricula.html#acd40e1914bdfb2eaddc1e24dcda6a92d" title="deleta a instancia da classe Matricula">tearDown</a>();
+<a name="l00209"></a>00209         } 
+<a name="l00210"></a>00210 };
+<a name="l00211"></a>00211 
+<a name="l00213"></a>00213 
+<a name="l00214"></a><a class="code" href="class_teste_unidade_nome___arquivo.html">00214</a> <span class="keyword">class </span><a class="code" href="class_teste_unidade_nome___arquivo.html" title="Classe TesteUnidadeNome_Arquivo.">TesteUnidadeNome_Arquivo</a>: <span class="keyword">public</span> <a class="code" href="class_teste_unidade.html" title="Classe TesteUnidade.">TesteUnidade</a>, <span class="keyword">public</span> Nome_Arquivo {
+<a name="l00215"></a>00215     <span class="keyword">private</span>:
+<a name="l00216"></a>00216         Nome_Arquivo *nome_arquivo;
+<a name="l00217"></a>00217         <span class="keywordtype">void</span> testarValido();
+<a name="l00218"></a>00218         <span class="keywordtype">void</span> testarInvalido();
+<a name="l00219"></a>00219     <span class="keyword">public</span>:
+<a name="l00223"></a><a class="code" href="class_teste_unidade_nome___arquivo.html#a796f85778140f739fe2e6e8e1f87b731">00223</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_nome___arquivo.html#a796f85778140f739fe2e6e8e1f87b731" title="cria uma instancia da classe Nome_Arquivo">setUp</a>(){
+<a name="l00224"></a>00224             nome_arquivo = <span class="keyword">new</span> Nome_Arquivo;
+<a name="l00225"></a>00225         }
+<a name="l00229"></a><a class="code" href="class_teste_unidade_nome___arquivo.html#a2626213ef3c457d3956c058d522cf34a">00229</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_nome___arquivo.html#a2626213ef3c457d3956c058d522cf34a" title="deleta a instancia da classe Nome_Arquivo">tearDown</a>(){
+<a name="l00230"></a>00230             <span class="keyword">delete</span> nome_arquivo;
+<a name="l00231"></a>00231         }
+<a name="l00235"></a><a class="code" href="class_teste_unidade_nome___arquivo.html#a4e6ee79dcbde8c2b2ff5ca6b6a990335">00235</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_nome___arquivo.html#a4e6ee79dcbde8c2b2ff5ca6b6a990335" title="executa o setUp(), testarValido() , testarInvalido(), tearDown().">run</a>(){
+<a name="l00236"></a>00236             <a class="code" href="class_teste_unidade_nome___arquivo.html#a796f85778140f739fe2e6e8e1f87b731" title="cria uma instancia da classe Nome_Arquivo">setUp</a>();
+<a name="l00237"></a>00237             testarValido();
+<a name="l00238"></a>00238             testarInvalido();
+<a name="l00239"></a>00239             <a class="code" href="class_teste_unidade_nome___arquivo.html#a2626213ef3c457d3956c058d522cf34a" title="deleta a instancia da classe Nome_Arquivo">tearDown</a>();
+<a name="l00240"></a>00240         }
+<a name="l00241"></a>00241 };
+<a name="l00242"></a>00242 
+<a name="l00244"></a>00244 
+<a name="l00245"></a><a class="code" href="class_teste_unidade_nota.html">00245</a> <span class="keyword">class </span><a class="code" href="class_teste_unidade_nota.html" title="Classe TesteUnidadeNota.">TesteUnidadeNota</a>: <span class="keyword">public</span> <a class="code" href="class_teste_unidade.html" title="Classe TesteUnidade.">TesteUnidade</a>, <span class="keyword">public</span> Nota{
+<a name="l00246"></a>00246     <span class="keyword">private</span>:
+<a name="l00247"></a>00247         Nota *nota;
+<a name="l00248"></a>00248         <span class="keywordtype">void</span> testarValido();
+<a name="l00249"></a>00249         <span class="keywordtype">void</span> testarInvalido();
+<a name="l00250"></a>00250     <span class="keyword">public</span>:
+<a name="l00254"></a><a class="code" href="class_teste_unidade_nota.html#a152acba800d4faff31e1f4a8b9126c4b">00254</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_nota.html#a152acba800d4faff31e1f4a8b9126c4b" title="cria uma instancia da classe Nota">setUp</a>(){
+<a name="l00255"></a>00255             nota = <span class="keyword">new</span> Nota;
+<a name="l00256"></a>00256         }
+<a name="l00260"></a><a class="code" href="class_teste_unidade_nota.html#a13e06cf32e7c61b3db4849b26a2c2926">00260</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_nota.html#a13e06cf32e7c61b3db4849b26a2c2926" title="deleta a instancia da classe Nota">tearDown</a>(){
+<a name="l00261"></a>00261             <span class="keyword">delete</span> nota;
+<a name="l00262"></a>00262         }
+<a name="l00266"></a><a class="code" href="class_teste_unidade_nota.html#a7364d87fd0c80a9b2064a76eaea8b923">00266</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_nota.html#a7364d87fd0c80a9b2064a76eaea8b923" title="executa o setUp(), testarValido() , testarInvalido(), tearDown().">run</a>(){
+<a name="l00267"></a>00267             <a class="code" href="class_teste_unidade_nota.html#a152acba800d4faff31e1f4a8b9126c4b" title="cria uma instancia da classe Nota">setUp</a>();
+<a name="l00268"></a>00268             testarValido();
+<a name="l00269"></a>00269             testarInvalido();
+<a name="l00270"></a>00270             <a class="code" href="class_teste_unidade_nota.html#a13e06cf32e7c61b3db4849b26a2c2926" title="deleta a instancia da classe Nota">tearDown</a>();
+<a name="l00271"></a>00271         }
+<a name="l00272"></a>00272 };
+<a name="l00273"></a>00273 
+<a name="l00275"></a>00275 
+<a name="l00276"></a><a class="code" href="class_teste_unidade_tamanho.html">00276</a> <span class="keyword">class </span><a class="code" href="class_teste_unidade_tamanho.html" title="Classe TesteUnidadeTamanho.">TesteUnidadeTamanho</a>: <span class="keyword">public</span> <a class="code" href="class_teste_unidade.html" title="Classe TesteUnidade.">TesteUnidade</a>, <span class="keyword">public</span> Tamanho{
+<a name="l00277"></a>00277     <span class="keyword">private</span>:
+<a name="l00278"></a>00278         Tamanho *tamanho;
+<a name="l00279"></a>00279         <span class="keywordtype">void</span> testarValido();
+<a name="l00280"></a>00280         <span class="keywordtype">void</span> testarInvalido();
+<a name="l00281"></a>00281     <span class="keyword">public</span>:
+<a name="l00285"></a><a class="code" href="class_teste_unidade_tamanho.html#aadca7a2934b8832990a48cbe55ee832b">00285</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_tamanho.html#aadca7a2934b8832990a48cbe55ee832b" title="cria uma instancia da classe Tamanho">setUp</a>(){
+<a name="l00286"></a>00286             tamanho = <span class="keyword">new</span> Tamanho;
+<a name="l00287"></a>00287         }
+<a name="l00291"></a><a class="code" href="class_teste_unidade_tamanho.html#a63cadec089bb5bc16dc9978084260fc8">00291</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_tamanho.html#a63cadec089bb5bc16dc9978084260fc8" title="deleta a instancia da classe Tamanho">tearDown</a>(){
+<a name="l00292"></a>00292             <span class="keyword">delete</span> tamanho;
+<a name="l00293"></a>00293         }
+<a name="l00297"></a><a class="code" href="class_teste_unidade_tamanho.html#af9bb3a26b5efeafd92798e2eefd91151">00297</a>         <span class="keywordtype">void</span> <a class="code" href="class_teste_unidade_tamanho.html#af9bb3a26b5efeafd92798e2eefd91151" title="executa o setUp(), testarValido() , testarInvalido(), tearDown().">run</a>(){
+<a name="l00298"></a>00298             <a class="code" href="class_teste_unidade_tamanho.html#aadca7a2934b8832990a48cbe55ee832b" title="cria uma instancia da classe Tamanho">setUp</a>();
+<a name="l00299"></a>00299             testarValido();
+<a name="l00300"></a>00300             testarInvalido();
+<a name="l00301"></a>00301             <a class="code" href="class_teste_unidade_tamanho.html#a63cadec089bb5bc16dc9978084260fc8" title="deleta a instancia da classe Tamanho">tearDown</a>();
+<a name="l00302"></a>00302         }
+<a name="l00303"></a>00303     };
+<a name="l00304"></a>00304 
+<a name="l00305"></a>00305 <span class="preprocessor">#endif</span>
+</pre></div></div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funções</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Gerado em Segunda, 10 de Outubro de 2011 17:09:31 para Testes do Sistema de Projetos dos Alunos por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.5.1
+</small></address>
+
+</body>
+</html>

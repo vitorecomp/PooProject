@@ -1,0 +1,87 @@
+\hypertarget{class_cntr_l_n_projeto}{
+\section{\-Referência à classe \-Cntr\-L\-N\-Projeto}
+\label{class_cntr_l_n_projeto}\index{\-Cntr\-L\-N\-Projeto@{\-Cntr\-L\-N\-Projeto}}
+}
+
+
+\-Classe que representa a controladora de logica de negocio relacionada aos projetos.  
+
+
+
+
+{\ttfamily \#include $<$\-Controladoras\-L\-N.\-h$>$}
+
+\-Diagrama de heranças da classe \-Cntr\-L\-N\-Projeto\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cntr_l_n_projeto}
+\end{center}
+\end{figure}
+\subsection*{\-Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_cntr_l_n_projeto_a04e97cbe898505b8be41361c5aa25863}{
+void {\bfseries cadastrar} (const \hyperlink{class_projeto}{\-Projeto} \&)}
+\label{class_cntr_l_n_projeto_a04e97cbe898505b8be41361c5aa25863}
+
+\item 
+\hypertarget{class_cntr_l_n_projeto_a9c6b515a33c830bb01ce4662fabb220e}{
+void {\bfseries remover} (\hyperlink{class_codigo___projeto}{\-Codigo\-\_\-\-Projeto})}
+\label{class_cntr_l_n_projeto_a9c6b515a33c830bb01ce4662fabb220e}
+
+\item 
+\hypertarget{class_cntr_l_n_projeto_a0cc5e822020c2bf6cf1b81dcb29d1076}{
+\hyperlink{class_projeto}{\-Projeto} {\bfseries pesquisar} (\hyperlink{class_codigo___projeto}{\-Codigo\-\_\-\-Projeto})}
+\label{class_cntr_l_n_projeto_a0cc5e822020c2bf6cf1b81dcb29d1076}
+
+\item 
+\hypertarget{class_cntr_l_n_projeto_a4fb8dfd83c8c91d96dffb6f6e5f20e36}{
+void {\bfseries atualizar} (\hyperlink{class_projeto}{\-Projeto} $\ast$)}
+\label{class_cntr_l_n_projeto_a4fb8dfd83c8c91d96dffb6f6e5f20e36}
+
+\item 
+void \hyperlink{class_cntr_l_n_projeto_a615a8c182106c8b312970d52fa0f4e5a}{set\-Persistencia} (\hyperlink{class_protocolo_persistencia}{\-Protocolo\-Persistencia} $\ast$)
+\begin{DoxyCompactList}\small\item\em \-Seta a controladora de logica de negocio de projetos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Atributos \-Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_cntr_l_n_projeto_a47a36dd23bde6bca28a61f44e5cbc17c}{
+\hyperlink{class_protocolo_persistencia}{\-Protocolo\-Persistencia} $\ast$ {\bfseries protocolo\-Persistencia}}
+\label{class_cntr_l_n_projeto_a47a36dd23bde6bca28a61f44e5cbc17c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Descrição detalhada}
+\-Classe que representa a controladora de logica de negocio relacionada aos projetos. 
+
+\-Recebe os dados da camada de apresentacao e prove os servicos relacionados aos projetos para a camada de persistencia. \-Aqui tambem sao executados os servicos de regra de negocio. 
+
+\subsection{\-Documentação dos métodos}
+\hypertarget{class_cntr_l_n_projeto_a615a8c182106c8b312970d52fa0f4e5a}{
+\index{\-Cntr\-L\-N\-Projeto@{\-Cntr\-L\-N\-Projeto}!set\-Persistencia@{set\-Persistencia}}
+\index{set\-Persistencia@{set\-Persistencia}!CntrLNProjeto@{\-Cntr\-L\-N\-Projeto}}
+\subsubsection[{set\-Persistencia}]{\setlength{\rightskip}{0pt plus 5cm}void \-Cntr\-L\-N\-Projeto\-::set\-Persistencia (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Protocolo\-Persistencia} $\ast$}]{protocolo\-Persistencia}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{class_cntr_l_n_projeto_a615a8c182106c8b312970d52fa0f4e5a}
+
+
+\-Seta a controladora de logica de negocio de projetos. 
+
+
+\begin{DoxyParams}{\-Parâmetros}
+{\em $\ast$protocolo\-Persistencia} & \\
+\hline
+\end{DoxyParams}
+
+
+\-Implementa \hyperlink{class_protocolo_projeto}{\-Protocolo\-Projeto}.
+
+
+
+\-A documentação para esta classe foi gerada a partir do seguinte ficheiro\-:\begin{DoxyCompactItemize}
+\item 
+\-Controladoras\-L\-N.\-h\end{DoxyCompactItemize}
